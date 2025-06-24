@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portofolio - Sindy Maulina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    section.portfolio {
+      padding: 60px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      color: #333;
+    }
+
+    .section-title p {
+      color: #555;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .portfolio-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-wrap {
+      position: relative;
+    }
+
+    .portfolio-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .portfolio-info {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .portfolio-info h4 {
+      margin: 0 0 5px;
+      font-size: 18px;
+    }
+
+    .portfolio-info p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .portfolio-links {
+      margin-top: 10px;
+    }
+
+    .portfolio-links a {
+      margin-right: 10px;
+      font-size: 18px;
+      color: #ffc107;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .portfolio-links a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="portfolio" id="portfolio">
+    <div class="section-title">
+      <h2>Portofolio</h2>
+      <p>Berikut beberapa proyek yang telah saya kerjakan selama perkuliahan dan aktivitas organisasi.</p>
+    </div>
+
+    <div class="portfolio-container">
+
+      <!-- Project 1 -->
+      <div class="portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/logiccoffee.jpg" alt="Logic Coffee Website">
+          <div class="portfolio-info">
+            <h4>Website Logic Coffee</h4>
+            <p>PHP & CodeIgniter | Web berita dinamis</p>
+            <div class="portfolio-links">
+              <a href="https://logiccoffee.id.biz.id" target="_blank" title="Website"><i class="bi bi-globe"></i></a>
+              <a href="https://github.com/sindymaulina04" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://katalog.bukupedia.co.id/2023/08/codeigniter-mesin-kreasi-website-berita.html" target="_blank" title="Buku"><i class="bi bi-book"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/peminjaman.jpg" alt="Sistem Peminjaman Buku">
+          <div class="portfolio-info">
+            <h4>Sistem Peminjaman Buku</h4>
+            <p>PHP, MySQL, HTML, CSS</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/sindymaulina04" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-item">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/dropship.jpg" alt="API Dropship Golaris">
+          <div class="portfolio-info">
+            <h4>Dropship API Golaris</h4>
+            <p>Laravel | RESTful API</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/sindymaulina04" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
